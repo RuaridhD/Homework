@@ -9,7 +9,11 @@ public class Calculator {
     }
 
     public int add(){
-        return num1 +num2;
+        return num1 + num2;
+    }
+
+    public int subtract(){
+        return num1 - num2;
     }
 
 }

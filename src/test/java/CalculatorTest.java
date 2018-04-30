@@ -9,12 +9,17 @@ public class CalculatorTest {
 
     @Before
     public void before() {
-        testCalculator = new Calculator(4, 6);
+        testCalculator = new Calculator(6, 4);
     }
 
     @Test
     public void calcAdds(){
         assertEquals(10, testCalculator.add());
+    }
+
+    @Test
+    public void calcSubtracts(){
+        assertEquals(2, testCalculator.subtract());
     }
 
 
