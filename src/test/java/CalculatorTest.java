@@ -14,17 +14,22 @@ public class CalculatorTest {
 
     @Test
     public void calcAdds(){
-        assertEquals(10, testCalculator.add());
+        assertEquals(10, testCalculator.add(), 0.01);
     }
 
     @Test
     public void calcSubtracts(){
-        assertEquals(2, testCalculator.subtract());
+        assertEquals(2, testCalculator.subtract(), 0.01);
     }
 
     @Test
     public void calcMultiplies(){
-        assertEquals(24, testCalculator.multiply());
+        assertEquals(24, testCalculator.multiply(), 0.01);
+    }
+
+    @Test
+    public void calcDivides(){
+        assertEquals(1.5, testCalculator.divide(), 0.01);
     }
 
 
