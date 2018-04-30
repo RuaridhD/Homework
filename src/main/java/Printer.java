@@ -12,4 +12,8 @@ public class Printer {
         }
         return sheets_left;
     }
+
+    public int fill(){
+        return this.sheets_left = 50;
+    }
 }

@@ -16,6 +16,11 @@ public class PrinterTest {
     public void sheetsDecreaseAfterPrinting(){
         assertEquals(40, testPrinter.print(2, 5));
     }
+
+    @Test
+    public void fillThePrinter(){
+        assertEquals(50, testPrinter.fill());
+    }
 }
 
 
